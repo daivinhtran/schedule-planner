@@ -1,1 +1,8 @@
 schedule
+
+<form method="POST"> Select the courses you like: <br>   
+{% for course in nextSemesterCourses %}
+  <input type="checkbox" name="nextSemesterCourse" value={{course}}/>{{course}}<br>
+{% endfor %}
+<input type="submit" value="Next Semester Schedule">
+</form>
