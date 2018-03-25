@@ -1,0 +1,8 @@
+thread requirement
+
+<form method="POST"> Select your taken courses: <br>   
+{% for course in requiredCourses %}
+  <input type="checkbox" name="takenCourse" value={{course}}/>{{course}}<br>
+{% endfor %}
+<input type="submit" value="Submit">
+</form>
